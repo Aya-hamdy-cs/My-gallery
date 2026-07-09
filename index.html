@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Full Art Gallery</title>
+    
+    <style>
+        /* 1. Global Styles & Background */
+        body {
+            background-color: #f5f0e1; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            color: #2c3e50; 
+            max-width: 900px; /* وسعنا الصفحة شوية عشان تستوعب الصور بشكل مريح */
+            margin: 0 auto; 
+            padding: 30px 20px; 
+            line-height: 1.6; 
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50; 
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #16a085; 
+            border-bottom: 2px solid #e0e0e0; 
+            padding-bottom: 8px;
+            margin-top: 50px;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #2980b9; 
+            margin-top: 30px;
+            border-left: 4px solid #2980b9; 
+            padding-left: 8px;
+            font-size: 1.4rem;
+        }
+
+        /* 5. Grid Layout for Artworks (تنسيق شبكي لعرض الصور بشكل منظم) */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* بيقسم الصور لصفوف جنب بعض تلقائياً حسب حجم الشاشة */
+            gap: 25px; /* المسافة بين كل صورة والتانية */
+            margin-top: 20px;
+        }
+
+        .art-item {
+            background: #ffffff;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .art-item:hover {
+            transform: translateY(-5px); /* حركة تفاعلية خفيفة لما الماوس ييجي على الصورة */
+        }
+
+        .art-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .art-item p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 8px 0 0 0;
+        }
+
+        ul {
+            list-style-type: square; 
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        a {
+            color: #2980b9; 
+            text-decoration: none; 
+            font-weight: bold;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #dcdde1;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <h1>🎨 My Personal Art Gallery 🎨</h1>
+    <p style="text-align: center; font-style: italic; color: #7f8c8d; font-size: 1.2rem;">
+        Welcome to my grand gallery. Exploring 21 of my favorite artworks, from dark graphite shadows to vibrant colors.
+    </p>
+
+    <hr>
+
+    <h2>🖌️ Gallery Sections</h2>
+
+    <!-- ==================== 1. PENCIL SKETCHES (11 IMAGES) ==================== -->
+    <h3>✨ Pencil Sketches (11 Artworks)</h3>
+    <p style="color: #666;">Focusing on textures, deep shading, and portrait details using graphite and charcoal.</p>
+    
+    <div class="gallery-grid">
+        
+        <!-- باقي الـ 11 صورة (غيري الأسامي لأسماء صورك الحقيقية) -->
+
+        <div class="art-item"><img src=" WhatsApp Image 2026-07-09 at 9.01.16 PM.jpeg"><p>Pencil Artwork 1</p></div>
+        <div class="art-item"><img src=" WhatsApp Image 2026-07-09 at 9.01.17 PM.jpeg"><p>Pencil Artwork 2</p></div>
+        <div class="art-item"><img src=" WhatsApp Image 2026-07-09 at 9.01.14 PM.jpeg"><p>Pencil Artwork 3</p></div>
+        <div class="art-item"><img src="77898999.jpeg"><p>Pencil Artwork 4</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.01.9 PM.jpeg"><p>Pencil Artwork 5</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.01.15 PM.jpeg"><p>Pencil Artwork 6</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.01.18 PM.jpeg"><p>Pencil Artwork 7</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-10 at 12.25.57 AM.jpeg"><p>Pencil Artwork 8</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-10 at 12.12.51 AM.jpeg"><p>Pencil Artwork 9</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.01.10 PM.jpeg"><p>Pencil Artwork 10</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.01.1 PM.jpeg"><p>Pencil Artwork 11</p></div>
+    </div>
+
+    <hr>
+
+    <!-- ==================== 2. COLORFUL PAINTINGS (10 IMAGES) ==================== -->
+    <h3>🎨 Colorful Paintings (10 Artworks)</h3>
+    <p style="color: #666;">Bringing stories to life using colored pencils, watercolors, and different mediums.</p>
+    
+    <div class="gallery-grid">
+        <!-- الـ 10 لوحات بتوع الألوان -->
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.05.06 PM.jpeg"><p>Colorful Artwork 1</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.05.03 PM.jpeg"><p>Colorful Artwork 2</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.05.04 PM.jpeg"><p>Colorful Artwork 3</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.05.02 PM.jpeg"><p>Colorful Artwork 4</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.05.044 PM.jpeg"><p>Colorful Artwork 5</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.11.52 PM.jpeg"><p>Colorful Artwork 6</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.11.51 PM.jpeg"><p>Colorful Artwork 7</p></div>
+        <div class="art-item"><img src="377888.jpeg"><p>Colorful Artwork 8</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.11.54 PM.jpeg"><p>Colorful Artwork 9</p></div>
+        <div class="art-item"><img src="WhatsApp Image 2026-07-09 at 9.05.99 PM.jpeg"><p>Colorful Artwork 10</p></div>
+    </div>
+
+    <hr>
+
+    <!-- Contact Section -->
+    <h2>📬 Contact & Socials</h2>
+    <ul>
+        <li>GitHub: <a href="https://github.com"Aya-hamdy-cs">My Code Account</a></li>
+        <li>facbook:<a href="https://facebook.com"Aya Hamdy Hamed">visit my account</a></li>
+    </ul>
+
+</body>
+</html>
+
+
